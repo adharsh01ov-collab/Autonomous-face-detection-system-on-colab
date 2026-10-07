@@ -1,10 +1,10 @@
-# 🧑‍💻 Autonomous Face Recognition & Storage System
+#  Autonomous Face Recognition & Storage System
 
 An autonomous face detection, recognition and enrollment system built for **Google Colab**. It detects faces with **MTCNN**, generates 512-D embeddings with **FaceNet (InceptionResnetV1, VGGFace2)**, and automatically enrolls unknown faces as `Person_001`, `Person_002`, … while logging every sighting to an **SQLite** database.
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [How It Works](#-how-it-works)
@@ -23,7 +23,7 @@ An autonomous face detection, recognition and enrollment system built for **Goog
 
 ---
 
-## ✨ Features
+##  Features
 
 - 🔍 **Face detection** using MTCNN with a confidence filter
 - 🧠 **Face embeddings** using FaceNet (InceptionResnetV1 pretrained on VGGFace2)
@@ -37,7 +37,7 @@ An autonomous face detection, recognition and enrollment system built for **Goog
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 ```
 Input (image / video / webcam)
@@ -61,7 +61,7 @@ Input (image / video / webcam)
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -76,7 +76,7 @@ Input (image / video / webcam)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 face-recognition-system/
@@ -101,7 +101,7 @@ face-recognition-system/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Option 1: Run in Google Colab (Recommended)
 
@@ -120,41 +120,41 @@ cd face-recognition-system
 pip install facenet-pytorch torch torchvision opencv-python pillow numpy pandas
 ```
 
-> ⚠️ The webcam and upload features use Google Colab APIs (`google.colab`). For local use, replace them with `cv2.VideoCapture(0)` and local file paths.
+>  The webcam and upload features use Google Colab APIs (`google.colab`). For local use, replace them with `cv2.VideoCapture(0)` and local file paths.
 
 ---
 
-## 📖 Usage
+##  Usage
 
-### 1️⃣ Install & Setup
+### 1️ Install & Setup
 Run the install cell and the config/database cell. Expected output:
 
 ```
 Device: cuda | DB: /content/face_system/faces.db
 ```
 
-### 2️⃣ Recognize Uploaded Images
+### 2️ Recognize Uploaded Images
 
 ```python
 run_on_uploads()
 ```
 Pick one or more photos. Each face is recognized or enrolled automatically.
 
-### 3️⃣ Process a Video File
+### 3️ Process a Video File
 
 ```python
 run_on_video()                                   # upload a video
 run_on_video('my_video.mp4', every_n=15, show=True)
 ```
 
-### 4️⃣ Live Webcam
+### 4️ Live Webcam
 
 ```python
 run_live(seconds=60, interval=1.0)
 ```
 Allow camera access when your browser prompts you.
 
-### 5️⃣ View & Manage People
+### 5️ View & Manage People
 
 ```python
 display(list_people())
@@ -166,7 +166,7 @@ delete_person(2)
 
 ---
 
-## 🎛️ Configuration
+##  Configuration
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
@@ -182,7 +182,7 @@ delete_person(2)
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 **`persons`**
 | Column | Type | Description |
@@ -210,7 +210,7 @@ delete_person(2)
 
 ---
 
-## 🖼️ Output Screenshots
+##  Output Screenshots
 
 > Replace each placeholder below with your own screenshot from Colab.
 > Save images in the `screenshots/` folder and keep the file names (or update the paths).
@@ -259,7 +259,7 @@ delete_person(2)
 
 ---
 
-## 🛠️ Managing the Database
+##  Managing the Database
 
 ```python
 list_people()                  # table of all enrolled people
@@ -271,7 +271,7 @@ show_person_crops(1, n=5)      # view saved crops
 
 ---
 
-## ⚠️ Limitations & Privacy
+##  Limitations & Privacy
 
 - Accuracy depends on lighting, pose, image quality and occlusion (masks, sunglasses).
 - Auto-enrollment can create **duplicate identities** if the threshold is too strict.
@@ -280,7 +280,7 @@ show_person_crops(1, n=5)      # view saved crops
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Web dashboard (Streamlit / Flask) for managing identities
 - [ ] Merge-duplicates tool for identity clean-up
@@ -291,24 +291,24 @@ show_person_crops(1, n=5)      # view saved crops
 
 ---
 
-## 👤 Author
+##  Author
 
 **Adharsh V**
 B.E. Electronics & Communication Engineering, Saveetha Engineering College
 
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
-- Email: your-email@example.com
+- GitHub: [@adharsh01ov-collab](https://github.com/your-username)
+- LinkedIn: [[Adharsh V](https://www.linkedin.com/in/adharsh-v-a62a6343b/)
+- Email: adharsh01ov@gmail.com
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [facenet-pytorch](https://github.com/timesler/facenet-pytorch) by Tim Esler
 - [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832)
