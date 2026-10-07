@@ -1,1 +1,0 @@
-# Autonomous-face-detection-system-on-colab
