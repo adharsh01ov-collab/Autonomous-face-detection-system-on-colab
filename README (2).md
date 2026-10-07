@@ -340,58 +340,35 @@ persons (1) ──── (many) sightings
 
 ## 🖼️ Output Screenshots
 
-> Replace each placeholder with your own screenshot from Colab. Save the images in the `screenshots/` folder using the same file names (or update the paths below).
-
 ### 1. Setup and device info
 
-<!-- Screenshot of the setup cell output: "Device: cuda | DB: ..." -->
-![Setup Output](screenshots/01_setup.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2861eb5e-d499-4f0b-9cdf-5411a9806d99" />
 
 *Model loading and database initialization.*
 
 ### 2. Image recognition (uploaded photos)
 
-<!-- Screenshot of an annotated image with bounding box, name and similarity -->
-![Image Recognition Output](screenshots/02_image_recognition.png)
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4423d945-62a0-4689-9d05-42551c1b3ec3" />
+
 
 *Orange box: new person enrolled. Green box: known person recognized.*
 
 ### 3. Video processing
 
-<!-- Screenshot of video processing, e.g. "Processed N frames from ..." -->
-![Video Processing Output](screenshots/03_video_processing.png)
+https://github.com/user-attachments/assets/c5f03d0e-e548-4067-91a3-71767b992adb
+
 
 *Faces detected and logged from sampled video frames.*
 
-### 4. Live webcam recognition
 
-<!-- Screenshot of a live webcam frame with detections and printed names -->
-![Live Webcam Output](screenshots/04_live_webcam.png)
+### 4. People table
 
-*Real-time recognition from the browser camera.*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/128f8421-a6d9-4dfb-906a-2f6bf6de8d10" />
 
-### 5. People table
-
-<!-- Screenshot of display(list_people()) -->
-![People Table](screenshots/05_people_table.png)
 
 *Enrolled people with sighting counts and last-seen time.*
 
-### 6. Sighting log
-
-<!-- Screenshot of display(sighting_log()) -->
-![Sighting Log](screenshots/06_sighting_log.png)
-
-*Timestamped log of recent detections.*
-
-### 7. Saved face crops
-
-<!-- Screenshot of show_person_crops(1) -->
-![Face Crops](screenshots/07_face_crops.png)
-
-*Stored face crops for a person.*
-
----
 
 ## 🧪 Sample Outputs
 
@@ -577,8 +554,8 @@ Contributions are welcome.
 **Adharsh V**
 B.E. Electronics & Communication Engineering, Saveetha Engineering College (Anna University)
 
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+- GitHub: [@adharsh01ov-collab](https://github.com/adharsh01ov-collab)
+- LinkedIn: https://www.linkedin.com/in/adharsh-v-a62a6343b/
 - Email: your-email@example.com
 
 ---
