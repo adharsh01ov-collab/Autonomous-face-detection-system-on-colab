@@ -212,8 +212,6 @@ delete_person(2)
 
 ##  Output Screenshots
 
-> Replace each placeholder below with your own screenshot from Colab.
-> Save images in the `screenshots/` folder and keep the file names (or update the paths).
 
 ### 1. Setup & Device Info
 <!-- Screenshot of: "Device: cuda | DB: ..." -->
